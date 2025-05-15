@@ -4,10 +4,10 @@ const GRASS = {
             unl: ()=>true,
             pos: [0,0],
 
-            get grow_speed() { return Decimal.mul(upgradeEffect('grass',3),upgradeEffect("perks",2)) },
+            get grow_speed() { return Decimal.mul(upgradeEffect('grass',99999999),upgradeEffect("perks",2)) },
             get grow_amount() { return Decimal.add(hasUpgrade('crystal',5)?2:1,upgradeEffect("perks",4,0)) },
 
-            get cap() { return Decimal.add(10,upgradeEffect('grass',2,0)).add(upgradeEffect("perks",3,0)).add(upgradeEffect("star","P1",0)) },
+            get cap() { return Decimal.add(10,upgradeEffect('grass',99999999,0)).add(upgradeEffect("perks",3,0)).add(upgradeEffect("star","P1",0)) },
 
             get autocut_speed() { return Decimal.add(upgradeEffect("auto",1,0),upgradeEffect('star',"P3",0)).mul(upgradeEffect("platinum",1)) },
             get autocut_value() { return Decimal.add(1,upgradeEffect('star',"P2",0)).mul(upgradeEffect("auto",2)).mul(upgradeEffect("auto",6)).mul(upgradeEffect("moonstone",10)) },
