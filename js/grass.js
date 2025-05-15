@@ -36,7 +36,7 @@ const GRASS = {
     resource: {
         grass: {
             get mult() {
-                let x = E(5).mul(upgradeEffect('grass',1)).mul(getLevelBonus('xp')).mul(upgradeEffect("perks",1)).mul(getLevelBonus('tp')).mul(ASTRAL.bonus('grass'))
+                let x = E(5).mul(upgradeEffect('grass',99999999)).mul(getLevelBonus('xp')).mul(upgradeEffect("perks",1)).mul(getLevelBonus('tp')).mul(ASTRAL.bonus('grass'))
                 .mul(upgradeEffect('prestige',1)).mul(upgradeEffect('crystal',1)).mul(upgradeEffect('platinum',3)).mul(getAccomplishmentBonus(0))
                 .mul(getAccomplishmentBonus(6)).mul(upgradeEffect('platinum',8)).mul(tmp.charger_bonus[3]??1).mul(upgradeEffect('anti-grass',6))
                 .mul(upgradeEffect('anonymity',3)).mul(upgradeEffect('oil',2)).mul(upgradeEffect('refinery','1a')).mul(upgradeEffect('refinery','2a')).mul(upgradeEffect('momentum','1a'))
@@ -47,7 +47,7 @@ const GRASS = {
         },
         xp: {
             get mult() {
-                let x = E(3).mul(upgradeEffect('grass',4)).mul(upgradeEffect("perks",'1a')).mul(getLevelBonus('tp')).mul(ASTRAL.bonus('xp'))
+                let x = E(3).mul(upgradeEffect('grass',99999999)).mul(upgradeEffect("perks",'1a')).mul(getLevelBonus('tp')).mul(ASTRAL.bonus('xp'))
                 .mul(upgradeEffect('prestige',2)).mul(upgradeEffect('crystal',2)).mul(upgradeEffect('platinum',2))
                 .mul(upgradeEffect('perks',5)).mul(getAccomplishmentBonus(1)).mul(upgradeEffect('platinum',9))
                 .mul(tmp.charger_bonus[1]??1).mul(upgradeEffect('anti-grass',7)).mul(upgradeEffect('anonymity',4))
